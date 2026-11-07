@@ -3,6 +3,22 @@
 > 这个 skill 是**本地创建**的（`_skillhub_meta.json` 里 `source: local`），没发到技能市场。
 > 分发靠「打包 → 发 zip」，更新靠「重新打包 → 重发」；也可以走 Git 让对方自助拉。
 
+## 〇、版本仓库（已建立 · 2026-11-07）
+
+| 项 | 值 |
+|---|---|
+| 仓库 | `https://github.com/yangzq66666/824238`（**Private**） |
+| git 地址 | `https://github.com/yangzq66666/824238.git` |
+| 本地目录 | `~/.workbuddy/skills/peisongyuan` |
+| 分支 | `main`，已跟踪 `origin/main` |
+
+> ⚠️ 用户名是 **`yangzq66666`（5 个 6）**，多打一个 6 会报 `Repository not found`，
+> 而 GitHub 对私有仓库一律用 404 伪装，很容易误判成「认证没过」。地址以 `git remote -v` 为准。
+
+以后改完功能：`git add -A && git commit -m "..." && git push` 即可，无需重新配置。
+**仓库是 Private，朋友看不到**；要让他们直接从 GitHub 下载，去 Settings 改成 Public（已脱敏，可公开），
+否则照旧发 zip。
+
 ## 一、打包（1 条命令）
 
 `git archive` 只打包**已提交**的文件。而 `config.json`（本机路径）、备份、缓存、运行产物
@@ -47,7 +63,7 @@ git archive --format=zip --prefix=peisongyuan/ \
 
 ```
 帮我校验并更新本地已装的 peisongyuan skill。核心要求：绝对不要动我的 config.json。
-源码仓库：https://github.com/<你的账号>/<仓库名>
+源码仓库：https://github.com/yangzq66666/824238
 步骤：
 1. 确认本地已装在 ~/.workbuddy/skills/peisongyuan/
 2. 先把我的 config.json 备份成 config.json.bak
@@ -70,7 +86,7 @@ git archive --format=zip --prefix=peisongyuan/ \
 ## 六、每次改完功能，必做三件事
 1. **bump 版本号**：`SKILL.md` frontmatter 的 `version`
 2. **记变更**：在下面「变更记录」补一行
-3. **发布**：`git commit` → 重新出包发朋友；若已推 GitHub，再 `git push`
+3. **发布**：`git commit` → `git push` → 重新出包发朋友（zip 与仓库保持同一版）
 
 ## 变更记录
 
