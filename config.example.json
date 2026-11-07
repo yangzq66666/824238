@@ -1,0 +1,7 @@
+{
+  "_说明": "把本文件复制为 config.json 并改成你机器上的路径。scripts/ 下的脚本会自动读取它作为默认值；不建 config.json 也不会报错，会回落到代码里的默认值。",
+
+  "videoRoot": "D:/视频",
+  "xlsxPath": "C:/Users/你的用户名/Desktop/账户ID.xlsx",
+  "chromePort": 9222
+}
