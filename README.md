@@ -1,5 +1,8 @@
 # 配送员 · 批量视频上传（分发包说明）
 
+> 这是一个 **WorkBuddy Skill**。怎么装进 WorkBuddy、怎么发给朋友、怎么同步更新，见 [SHARE.md](SHARE.md)。
+> 仓库：https://github.com/yangzq66666/peisongyuan-skill （Public，免登录可下载）
+
 把本地视频文件夹按名称匹配到快手**磁力金牛**广告主账户 ID，再批量上传到各账户的视频库。
 
 - 同一账户下的所有文件夹**合并成一批**上传（超 100 个自动分批）

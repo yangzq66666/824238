@@ -7,11 +7,12 @@
 
 | 项 | 值 |
 |---|---|
-| 仓库 | `https://github.com/yangzq66666/824238`（**Public**，2026-11-07 起） |
-| git 地址 | `https://github.com/yangzq66666/824238.git` |
+| 仓库 | `https://github.com/yangzq66666/peisongyuan-skill`（**Public**，2026-11-07 起） |
+| git 地址 | `https://github.com/yangzq66666/peisongyuan-skill.git` |
 | 朋友下载 | 仓库页 → 绿色 **Code → Download ZIP**（无需账号） |
 | 本地目录 | `~/.workbuddy/skills/peisongyuan` |
 | 分支 | `main`，已跟踪 `origin/main` |
+| 曾用名 | `824238`（旧链接返回 301 自动跳转，**已发出去的旧链接仍然可用**） |
 
 > ⚠️ 用户名是 **`yangzq66666`（5 个 6）**，多打一个 6 会报 `Repository not found`，
 > 而 GitHub 对私有仓库一律用 404 伪装，很容易误判成「认证没过」。地址以 `git remote -v` 为准。
@@ -68,9 +69,9 @@ git archive --format=zip --prefix=peisongyuan/ \
 
 仓库页 → 绿色 **Code → Download ZIP** → 把下载的**原始 zip** 拖进「上传技能」。
 
-> ⚠️ GitHub 自动生成的 zip 顶层是 `824238-main/`（不是 `peisongyuan/`）。
+> ⚠️ GitHub 自动生成的 zip 顶层是 `peisongyuan-skill-main/`（不是 `peisongyuan/`）。
 > **不要解压后重新压缩**——多套一层目录会报「找不到 SKILL.md」。
-> 若装完技能名显示成 `824238-main` 或提示找不到入口，改用方式 A，或走方式 C 让 Agent 处理。
+> 若装完技能名显示成 `peisongyuan-skill-main` 或提示找不到入口，改用方式 A，或走方式 C 让 Agent 处理。
 
 ### 方式 C：把仓库地址交给 WorkBuddy 自己装（后续更新最省事）
 
@@ -78,13 +79,13 @@ git archive --format=zip --prefix=peisongyuan/ \
 
 ```
 帮我把下面这个公开仓库的 Skill 安装到 WorkBuddy。核心要求：绝对不要覆盖我已有的 config.json。
-仓库：https://github.com/yangzq66666/824238
+仓库：https://github.com/yangzq66666/peisongyuan-skill
 分支：main
 目标目录：~/.workbuddy/skills/peisongyuan/
 
 步骤：
 1. 若目标目录已存在且有 .git，改为 git pull 更新；否则先把它原有的 config.json 备份到别处
-2. 匿名下载仓库 main 分支的全部文件，平铺放进目标目录（不要多套一层 824238-main/）
+2. 匿名下载仓库 main 分支的全部文件，平铺放进目标目录（不要多套一层 peisongyuan-skill-main/）
 3. 确认 SKILL.md 在目标目录根部，frontmatter 里 name 是 peisongyuan
 4. 若目录里没有 config.json：复制 config.example.json 为 config.json，并提醒我按 README 填自己的 videoRoot / xlsxPath / chromePort
 5. 若第 1 步备份过 config.json，原样恢复回去
@@ -137,3 +138,4 @@ git archive --format=zip --prefix=peisongyuan/ \
 |---|---|---|
 | 1.0.0 | 2026-11-07 | 首次整理为可分发版：补 `.gitignore`、`SHARE.md`，示例人名脱敏，纳入 Git 版本管理 |
 | 1.0.0 文档 | 2026-11-07 | 仓库改 Public；SHARE.md 补「朋友怎么拉进 WorkBuddy」三种方式、安装提示词与更新同步流程（代码未变） |
+| 1.0.0 文档 | 2026-11-07 | 仓库改名 `peisongyuan-skill`；同步更新 remote、README 指引、SHARE.md 全部地址与提示词（代码未变） |
